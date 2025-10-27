@@ -1,0 +1,32 @@
+    /* Homepage Dark Theme CSS:
+    ============================================= */
+    
+    .darkTheme {
+        background: #101010 !important;
+    }
+    
+     :root {
+        --bg_color1: #e5e5e5;
+        --bg_color2: #349EB4;
+        --bg_color3: #17444E;
+        --bg_color4: #EFFCFF;
+        --bg_color5: #fff;
+        --bg_color6: #EFEFFF;
+        --h_txt_color: #000;
+        --cont_txt_color: #fff;
+        --cont_txt_color2: #349EB4;
+        --border_color: #000;
+    }
+    
+     :root .darkTheme {
+        --bg_color1: #4e4e4e;
+        --bg_color2: #022f38;
+        --bg_color3: #0b2b32;
+        --bg_color4: #78bdcc;
+        --bg_color5: #000;
+        --bg_color6: #5b5b77;
+        --h_txt_color: #fff;
+        --cont_txt_color: #fff;
+        --border_color: #fff;
+        --cont_txt_color2: #b5eefa;
+    }

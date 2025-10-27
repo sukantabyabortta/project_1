@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>Homepage</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/component.css">
+    <link rel="stylesheet" href="style.css">
+    <!-- <style>
+        .hovered,
+         :focus {
+            background-color: #ff0606 !important;
+            outline: none !important;
+            color: #fff !important;
+            border: 3px solid #ff0606;
+        }
+    </style> -->
+</head>
+
+<body>
+    <div class="loadScreen"></div>
+    <div class="page_wrapper">
+        <header class="header">
+            <div class="header_top">
+                <div class="container">
+                    <div class="header_top_left" data-aos="fade-right">
+                        <ul>
+                            <li><a href="#">Skip to Main Content</a></li>
+                            <li><a href="#">Screen Reader Access </a></li>
+                            <li>
+                                <a href="#" id="decreasetext" class="txt_size">-A</a>
+                                <a href="#" id="resettext" class="txt_size">A</a>
+                                <a href="#" id="increasetext" class="txt_size">+A</a>
+                            </li>
+                            <li>
+                                <a href="#" id="theme_white" data-color="#fffdec" class="theme_white thm_btn">A</a>
+                                <a href="#" id="theme_black" data-color="#000" class="theme_black thm_btn">A</a>
+                            </li>
+                        </ul>
+                        <div class="language_link">
+                            <a href="#">English</a>
+                            <a href="#">हिन्दी</a>
+                        </div>
+                    </div>
+                    <div class="header_top_right" data-aos="fade-left">
+                        <div class="social_info">
+                            <a href="#"><img src="images/ux-icon.png" alt=""></a>
+                            <a href="#"><img src="images/fb-icon.png" alt=""></a>
+                            <a href="#"><img src="images/linkedin-icon.png" alt=""></a>
+                            <a href="#"><img src="images/youtube-icon.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header_middle">
+                <div class="container">
+                    <a href="index.html" class="site_logo" data-aos="fade-right" data-aos-delay="300">
+                        <img src="images/site-logo.png" alt="">
+                    </a>
+
+                    <div class="header_search" data-aos="fade-left" data-aos-delay="600">
+                        <input type="search" name="" id="" placeholder="Search" required>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header_bottom">
+                <div class="container">
+                    <div class="header_nav">
+                        <a href="#" class="cls_btn"><img src="images/close-icon-white.png" alt=""></a>
+                        <ul data-aos="fade-right" data-aos-delay="600">
+                            <li class="active">
+                                <a href="index.html">Menu 1</a>
+                            </li>
+                            <li><a href="#">Menu 2</a>
+                                <ul>
+                                    <li><a href="#">Submenu 2.1</a></li>
+                                    <li><a href="#">Submenu 2.2</a></li>
+                                    <li><a href="#">Submenu 2.3</a></li>
+                                    <li><a href="#">Submenu 2.4</a></li>
+                                    <li><a href="#">Submenu 2.5</a></li>
+                                    <li><a href="#">Submenu 2.6</a>
+                                        <ul>
+                                            <li><a href="#">Submenu 2.6.1</a></li>
+                                            <li><a href="#">Submenu 2.6.2</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Submenu 2.7</a>
+                                        <ul>
+                                            <li><a href="#">Submenu 2.7.1</a></li>
+                                            <li><a href="#">Submenu 2.7.2</a>
+                                                <ul>
+                                                    <li><a href="#">Submenu 2.7.2.1</a></li>
+                                                    <li><a href="#">Submenu 2.7.2.2</a></li>
+                                                    <li><a href="#">Submenu 2.7.2.3</a></li>
+                                                    <li><a href="#">Submenu 2.7.2.4</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Submenu 2.7.3</a>
+                                                <ul>
+                                                    <li><a href="#">Submenu 2.7.3.1</a></li>
+                                                    <li><a href="#">Submenu 2.7.3.2</a></li>
+                                                    <li><a href="#">Submenu 2.7.3.3</a></li>
+                                                    <li><a href="#">Submenu 2.7.3.4</a></li>
+                                                    <li><a href="#">Submenu 2.7.3.5</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="#">Submenu 2.8</a>
+                                        <ul>
+                                            <li><a href="#">Submenu 2.8.1</a>
+                                                <ul>
+                                                    <li><a href="#">Submenu 2.8.1.1</a></li>
+                                                    <li><a href="#">Submenu 2.8.1.2</a></li>
+                                                    <li><a href="#">Submenu 2.8.1.3</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="#">Submenu 2.8.2</a></li>
+                                            <li><a href="#">Submenu 2.8.3</a></li>
+                                            <li><a href="#">Submenu 2.8.4</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Menu 3</a></li>
+                            <li><a href="#">Menu 4</a></li>
+                            <li><a href="#">Menu 5</a>
+                                <ul>
+                                    <li><a href="#">Submenu 5.1</a></li>
+                                    <li><a href="#">Submenu 5.2</a></li>
+                                    <li><a href="#">Submenu 5.3</a></li>
+                                    <li><a href="#">Submenu 5.4</a></li>
+                                    <li><a href="#">Submenu 5.5</a></li>
+                                    <li><a href="#">Submenu 5.6</a></li>
+                                    <li><a href="#">Submenu 5.7</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Menu 6</a></li>
+                            <li><a href="#">Menu 7</a>
+                                <ul>
+                                    <li><a href="#">Submenu 7.1</a></li>
+                                    <li><a href="#">Submenu 7.2</a></li>
+                                    <li><a href="#">Submenu 7.3</a></li>
+                                    <li><a href="#">Submenu 7.4</a></li>
+                                    <li><a href="#">Submenu 7.5</a></li>
+                                    <li><a href="#">Submenu 7.6</a></li>
+                                    <li><a href="#">Submenu 7.7</a></li>
+                                    <li><a href="#">Submenu 7.8</a></li>
+                                    <li><a href="#">Submenu 7.9</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Menu 8</a>
+                                <ul>
+                                    <li><a href="#">Submenu 8.1</a></li>
+                                    <li><a href="#">Submenu 8.2</a></li>
+                                    <li><a href="#">Submenu 8.3</a></li>
+                                    <li><a href="#">Submenu 8.4</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Menu 9</a>
+                                <ul>
+                                    <li><a href="#">Submenu 9.1</a></li>
+                                    <li><a href="#">Submenu 9.2</a></li>
+                                    <li><a href="#">Submenu 9.3</a></li>
+                                    <li><a href="#">Submenu 9.4</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Menu 10</a>
+                                <ul>
+                                    <li><a href="#">Submenu 10.1</a></li>
+                                    <li><a href="#">Submenu 10.2</a></li>
+                                    <li><a href="#">Submenu 10.3</a></li>
+                                    <li><a href="#">Submenu 10.4</a></li>
+                                    <li><a href="#">Submenu 10.5</a></li>
+                                    <li><a href="#">Submenu 10.6</a></li>
+                                    <li><a href="#">Submenu 10.7</a></li>
+                                    <li><a href="#">Submenu 10.8</a></li>
+                                    <li><a href="#">Submenu 10.9</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Menu 11</a></li>
+                            <li><a href="#">Menu 12</a></li>
+                            <li><a href="#">Menu 13</a></li>
+                            <li><a href="#">Menu 14</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="banner">
+            <div class="banner_slider">
+                <div class="item">
+                    <div class="banner_cont" style="background-image: url(images/banner-img.png);">
+                        <div class="container">
+                            <div class="banner_txt">
+                                <h2>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                </h2>
+                                <p>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod id sunt natus, aliquid placeat animi corrupti aut veritatis possimus qui?
+                                </p>
+                                <a href="#">Online Registration</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <dl class="banner myDropdown">
+                <dt><small><span><img src="images/download-icon.png" alt="">English</span></small></dt>
+                <dd>
+                    <ul>
+                        <li>English</li>
+                        <li>Hindi (हिन्दी)</li>
+                        <li>Bengali (বাংলা)</li>
+                        <li>Gujarati (ગુજરાતી)</li>
+                        <li>Tamil (தமிழ்)</li>
+                        <li>Telugu (తెలుగు)</li>
+                        <li>Urdu (اردو)</li>
+                    </ul>
+                </dd>
+            </dl>
+        </section>
+
+        <section class="announcement">
+            <div class="container">
+                <strong>What's New</strong>
+                <div class="announcement_inner">
+                    <div class="n_ticker_holder">
+                        <div class="n_ticker">
+                            <ul>
+                                <li>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum nesciunt minus rem eos. Repudiandae, maxime. Quisquam commodi eius temporibus asperiores sed, nulla optio modi accusantium.
+                                </li>
+                                <li>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum nesciunt minus rem eos. Repudiandae, maxime. Quisquam commodi eius temporibus asperiores sed, nulla optio modi accusantium.
+                                </li>
+                                <li>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum nesciunt minus rem eos. Repudiandae, maxime. Quisquam commodi eius temporibus asperiores sed, nulla optio modi accusantium.
+                                </li>
+                                <li>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum nesciunt minus rem eos. Repudiandae, maxime. Quisquam commodi eius temporibus asperiores sed, nulla optio modi accusantium.
+                                </li>
+                            </ul>
+                            <ul aria-hidden="true">
+                                <li>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum nesciunt minus rem eos. Repudiandae, maxime. Quisquam commodi eius temporibus asperiores sed, nulla optio modi accusantium.
+                                </li>
+                                <li>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum nesciunt minus rem eos. Repudiandae, maxime. Quisquam commodi eius temporibus asperiores sed, nulla optio modi accusantium.
+                                </li>
+                                <li>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum nesciunt minus rem eos. Repudiandae, maxime. Quisquam commodi eius temporibus asperiores sed, nulla optio modi accusantium.
+                                </li>
+                                <li>
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum nesciunt minus rem eos. Repudiandae, maxime. Quisquam commodi eius temporibus asperiores sed, nulla optio modi accusantium.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="custom_panel_1">
+            <div class="container">
+                <div class="h_txt">
+                    <h2>Key Person</h2>
+                </div>
+                <div class="block_1">
+                    <ul>
+                        <li>
+                            <img src="images/pic1.png" alt="">
+                            <div class="txt1">
+                                <strong>
+                                Lorem ipsum dolor sit amet consectetur
+                            </strong>
+                                <small>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</small>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/pic1.png" alt="">
+                            <div class="txt1">
+                                <strong>
+                                Lorem ipsum dolor sit amet consectetur
+                            </strong>
+                                <small>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</small>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="images/pic1.png" alt="">
+                            <div class="txt1">
+                                <strong>
+                                Lorem ipsum dolor sit amet consectetur
+                            </strong>
+                                <small>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</small>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="block_2">
+                    <ul>
+                        <li>
+                            <h3>Processing Section</h3>
+                            <span>
+                                Lorem ipsum dolor sit amet consectetur.
+                            </span>
+                            <strong>1. Freezing Plant</strong>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum vitae id accusantium maxime, aut sequi odit delectus dolorum doloremque tempore reiciendis itaque, ducimus quam? Dolore illo dolor veritatis ullam dolorum.
+                            </p>
+                            <a href="#" class="readMore">Read More</a>
+                        </li>
+                        <li>
+                            <h3>Training & QC Section</h3>
+                            <span>
+                                Lorem ipsum dolor sit amet consectetur.
+                            </span>
+                            <strong>1. Freezing Plant</strong>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum vitae id accusantium maxime, aut sequi odit delectus dolorum doloremque tempore reiciendis itaque, ducimus quam? Dolore illo dolor veritatis ullam dolorum.
+                            </p>
+                            <a href="#" class="readMore">Read More</a>
+                        </li>
+                        <li>
+                            <h3>Statistical Section</h3>
+                            <span>
+                                Lorem ipsum dolor sit amet consectetur.
+                            </span>
+                            <strong>1. Freezing Plant</strong>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum vitae id accusantium maxime, aut sequi odit delectus dolorum doloremque tempore reiciendis itaque, ducimus quam? Dolore illo dolor veritatis ullam dolorum.
+                            </p>
+                            <a href="#" class="readMore">Read More</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="block_3">
+                    <div class="block_3_left height_1">
+                        <div class="activity_slider">
+                            <div id="activity_slider" class="activity_slider_inner">
+                                <div class="item">
+                                    <img src="images/pic2.png" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="images/pic2.png" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="images/pic2.png" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="images/pic2.png" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="images/pic2.png" alt="">
+                                </div>
+                                <div class="item">
+                                    <img src="images/pic2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="block_3_left_txt">
+                            <h3>Important Activities</h3>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur. Sit morbi et amet consequat sit vitae eu. Nam et enim risus amet.Lorem ipsum dolor sit amet consectetur. Sit morbi et amet consequat sit vitae eu. Nam et enim risus amet.
+                            </p>
+                            <a href="#">View More →</a>
+                        </div>
+                    </div>
+
+                    <div class="photo_gallery height_1">
+                        <div class="gallery_box">
+                            <div class="gallery_box_inner">
+                                <div id="gallery_slider1" class="gallery_slider">
+                                    <div class="item">
+                                        <img src="images/pic3.png" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/pic3.png" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="images/pic3.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <h4>Photo Gallery</h4>
+                        <a href="#">View All →</a>
+                    </div>
+                </div>
+
+                <div class="block_4">
+                    <ul>
+                        <li>
+                            <div class="photo_gallery">
+                                <div class="gallery_box">
+                                    <div class="gallery_box_inner">
+                                        <div class="cont_box">
+                                            <h5>Lorem, ipsum dolor sit amet consectetur</h5>
+                                            <img src="images/pic4.png" alt="">
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere harum magni beatae minus nisi animi.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h4>Fair/Exhibitions</h4>
+                                <a href="#">View All →</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="photo_gallery">
+                                <div class="gallery_box">
+                                    <div class="gallery_box_inner">
+                                        <div class="cont_box">
+                                            <h5>Lorem, ipsum dolor sit amet consectetur</h5>
+                                            <img src="images/pic4.png" alt="">
+                                            <p>
+                                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere harum magni beatae minus nisi animi.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h4>TRAINING PROGRAM</h4>
+                                <a href="#">View All →</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="photo_gallery">
+                                <div class="gallery_box">
+                                    <div class="gallery_box_inner">
+                                        <div id="gallery_slider2" class="gallery_slider">
+                                            <div class="item">
+                                                <img src="images/pic3.png" alt="">
+                                            </div>
+                                            <div class="item">
+                                                <img src="images/pic3.png" alt="">
+                                            </div>
+                                            <div class="item">
+                                                <img src="images/pic3.png" alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h4>Videos Gallery</h4>
+                                <a href="#">View All →</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="latest_news">
+            <div class="container">
+                <div class="h_txt">
+                    <h2>Latest News</h2>
+                    <div class="news_slider_arrow">
+                        <a href="#" class="prev"><img src="images/slider-arrow.png" alt=""></a>
+                        <a href="#" class="next"><img src="images/slider-arrow.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="latest_news_slider">
+                    <div class="item">
+                        <div class="news_item">
+                            <a href="#">
+                                <img src="images/pic3.png" alt="">
+                                <small>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ex excepturi earum laborum eveniet fuga voluptas voluptatibus quos natus magnam.
+                                </small>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="news_item">
+                            <a href="#">
+                                <img src="images/pic3.png" alt="">
+                                <small>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ex excepturi earum laborum eveniet fuga voluptas voluptatibus quos natus magnam.
+                                </small>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="news_item">
+                            <a href="#">
+                                <img src="images/pic3.png" alt="">
+                                <small>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ex excepturi earum laborum eveniet fuga voluptas voluptatibus quos natus magnam.
+                                </small>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="news_item">
+                            <a href="#">
+                                <img src="images/pic3.png" alt="">
+                                <small>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ex excepturi earum laborum eveniet fuga voluptas voluptatibus quos natus magnam.
+                                </small>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="news_item">
+                            <a href="#">
+                                <img src="images/pic3.png" alt="">
+                                <small>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint ex excepturi earum laborum eveniet fuga voluptas voluptatibus quos natus magnam.
+                                </small>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="quick_link_panel">
+            <div class="container">
+                <div class="h_txt">
+                    <small>Useful Links</small>
+                    <h2>Quick Links</h2>
+                </div>
+                <ul>
+                    <li>
+                        <img src="images/img-icon1.png" alt=""> Inland<br> Fisheries
+                    </li>
+                    <li>
+                        <img src="images/img-icon2.png" alt=""> Marine<br> Fisheries
+                    </li>
+                    <li>
+                        <img src="images/img-icon3.png" alt=""> International<br> Cooperation (IC)
+                    </li>
+                    <li>
+                        <img src="images/img-icon4.png" alt=""> Cash<br> Section
+                    </li>
+                    <li>
+                        <img src="images/img-icon5.png" alt=""> Administration I<br> (Admin I)
+                    </li>
+                    <li>
+                        <img src="images/img-icon6.png" alt=""> National Fisheries<br> Digital Platform
+                    </li>
+                    <li>
+                        <img src="images/img-icon7.png" alt=""> Statistics<br> Divisions
+                    </li>
+                    <li>
+                        <img src="images/img-icon8.png" alt=""> Trade
+                    </li>
+                    <li>
+                        <img src="images/img-icon9.png" alt=""> Budget
+                    </li>
+                    <li>
+                        <img src="images/img-icon8.png" alt=""> Farmer's<br> Manual
+                    </li>
+                    <li>
+                        <img src="images/img-icon10.png" alt=""> Inland<br> Fisheries
+                    </li>
+                    <li></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="custom_panel_2">
+            <div class="container">
+                <div class="custom_link height_2">
+                    <h3>International Organizations</h3>
+                    <ul>
+                        <li><a href="https://worldfishcenter.org/" target="_blank">→  World Fish Center</a></li>
+                        <li><a href="https://www.worldbank.org/" target="_blank">→  World Bank</a></li>
+                        <li><a href="https://v4.infofish.org/" target="_blank">→  InfoFish</a></li>
+                        <li><a href="#" target="_blank">→  Coastal Aquaculture Authority</a></li>
+                        <li><a href="https://www.woah.org/en/home/" target="_blank">→  World organization of animal health</a></li>
+                        <li><a href="#" target="_blank">→  State Fisheries Department</a></li>
+                    </ul>
+                </div>
+
+                <div class="c_box1 height_2">
+                    <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit Animi</h4>
+                    <small>Lorem ipsum dolor sit amet consectetur. Volutpat gravida a arcu viverra accumsan blandit venenatis placerat in.</small>
+                    <a href="#" class="button1">Checkout FMPMS Admin↗</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="info_slide">
+            <div id="info_slide" class="container">
+                <div class="item">
+                    <figure><img src="images/c-icon1.png" alt=""></figure>
+                </div>
+                <div class="item">
+                    <figure><img src="images/c-icon1.png" alt=""></figure>
+                </div>
+                <div class="item">
+                    <figure><img src="images/c-icon1.png" alt=""></figure>
+                </div>
+                <div class="item">
+                    <figure><img src="images/c-icon1.png" alt=""></figure>
+                </div>
+                <div class="item">
+                    <figure><img src="images/c-icon1.png" alt=""></figure>
+                </div>
+                <div class="item">
+                    <figure><img src="images/c-icon1.png" alt=""></figure>
+                </div>
+                <div class="item">
+                    <figure><img src="images/c-icon1.png" alt=""></figure>
+                </div>
+                <div class="item">
+                    <figure><img src="images/c-icon1.png" alt=""></figure>
+                </div>
+                <div class="item">
+                    <figure><img src="images/c-icon1.png" alt=""></figure>
+                </div>
+                <div class="item">
+                    <figure><img src="images/c-icon1.png" alt=""></figure>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="header_top">
+                <div class="container">
+                    <a href="index.html" class="site_logo">
+                        <img src="images/site-logo.png" alt="">
+                    </a>
+                    <div class="header_top_right">
+                        <div class="social_info">
+                            <a href="#"><img src="images/ux-icon.png" alt=""></a>
+                            <a href="#"><img src="images/fb-icon.png" alt=""></a>
+                            <a href="#"><img src="images/linkedin-icon.png" alt=""></a>
+                            <a href="#"><img src="images/youtube-icon.png" alt=""></a>
+                        </div>
+                        <div class="language_link">
+                            <a href="#">English</a>
+                            <a href="#">हिन्दी</a>
+                        </div>
+                        <dl class="myDropdown">
+                            <dt><small><span><img src="images/download-icon.png" alt="">English</span></small></dt>
+                            <dd>
+                                <ul>
+                                    <li>English</li>
+                                    <li>Hindi (हिन्दी)</li>
+                                    <li>Bengali (বাংলা)</li>
+                                    <li>Gujarati (ગુજરાતી)</li>
+                                    <li>Tamil (தமிழ்)</li>
+                                    <li>Telugu (తెలుగు)</li>
+                                    <li>Urdu (اردو)</li>
+                                </ul>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quick_link">
+                <div class="container">
+                    <div class="link_column">
+                        <h5>About US</h5>
+                        <ul>
+                            <ul>
+                                <li><a href="#">History</a></li>
+                                <li><a href="#">Vision & Mission</a></li>
+                                <li><a href="#">Organizational Structure</a></li>
+                                <li><a href="#">Director’s Profile</a></li>
+                                <li><a href="#">Director’s Profile</a></li>
+                                <li><a href="#">Director’s Profile</a></li>
+                            </ul>
+                        </ul>
+                    </div>
+                    <div class="link_column">
+                        <h5>Training Courses</h5>
+                        <ul>
+                            <li><a href="#">OJT for Collage Students</a></li>
+                            <li><a href="#">Canning of Seafood</a></li>
+                            <li><a href="#">VAP From Fresh water fish</a></li>
+                            <li><a href="#">HACCP Concepts</a></li>
+                            <li><a href="#">Short Term Training on VAP</a></li>
+                            <li><a href="#">Fish Filleting</a></li>
+                        </ul>
+                    </div>
+                    <div class="link_column">
+                        <h5>Publications</h5>
+                        <ul>
+                            <li><a href="#">Annual Reports</a></li>
+                            <li><a href="#">Newsletter</a></li>
+                            <li><a href="#">Brochures</a></li>
+                            <li><a href="#">Other Publications</a></li>
+                            <li><a href="#">Presentations</a></li>
+                        </ul>
+                    </div>
+                    <div class="link_column">
+                        <h5>External Links</h5>
+                        <ul>
+                            <li><a href="#">Director’s Profile</a></li>
+                            <li><a href="#">Director’s Profile</a></li>
+                            <li><a href="#">Director’s Profile</a></li>
+                            <li><a href="#">Director’s Profile</a></li>
+                            <li><a href="#">Director’s Profile</a></li>
+                            <li><a href="#">Director’s Profile</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer_box">
+                <div class="container">
+                    <a href="#">Terms & Conditions  &nbsp; |</a>
+                    <a href="#">Privacy Policy</a>
+                    <p>Copyright © 2025, India | All Rights Reserved</p>
+                    <span>Last Updated on :01 January 2025 | Visitor No: <strong>123456</strong></span>
+                </div>
+            </div>
+
+            <div class="footer_bottom">
+                <div class="container">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur nam saepe aliquid? Commodi eveniet pariatur laboriosam facere tenetur perspiciatis mollitia? At animi qui, dicta labore iure a dolorem vero impedit neque facilis aliquid assumenda natus
+                        eaque saepe rem? Vitae et dolores at odio ipsa quae delectus consectetur itaque. Cupiditate, inventore!
+                    </p>
+                    <p>
+                        UI Developed by: <strong>Sukanta</strong>
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- <div id="popup" class="popup-overlay">
+        <div class="popup-content">
+            <img src="images/popup-img.png" alt="Fishing Boat">
+        </div>
+    </div> -->
+
+    <!-- JS -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/component.js"></script>
+    <script src="js/edit-js.js"></script>
+    <script>
+        // $(document).ready(function() {
+        //     $('body').addClass('popup-active');
+        //     setTimeout(function() {
+        //         $('#popup').fadeOut("fast");
+        //         $('body').removeClass('popup-active');
+        //     }, 3000);
+        // });
+    </script>
+
+    <script>
+        $(function() {
+            const items = $('body')
+                .find('a[href], button, input, select, textarea, [tabindex]')
+                .filter(':visible:not([disabled]):not([tabindex="-1"])')
+                .each(function(index) {
+                    $(this).attr('tabindex', index + 1);
+                    if (!$(this).attr('role')) {
+                        const tag = this.tagName.toLowerCase();
+                        if (tag === 'button' || tag === 'a') {
+                            $(this).attr('role', 'button');
+                        }
+                    }
+                });
+
+            items.on('focus', function() {
+                items.removeClass('hovered');
+                $(this).addClass('hovered').trigger('mouseenter');
+            }).on('blur', function() {
+                $(this).removeClass('hovered');
+            });
+
+            $(document).on('keydown', function(e) {
+                const focused = document.activeElement;
+                const focusable = items.toArray();
+                const currentIndex = focusable.indexOf(focused);
+
+                if (e.key === 'Escape') {
+                    focused.blur();
+                }
+
+                if (e.key === 'ArrowDown' || (e.key === 'Tab' && !e.shiftKey)) {
+                    e.preventDefault();
+                    const next = focusable[currentIndex + 1] || focusable[0];
+                    next.focus();
+                }
+
+                if (e.key === 'ArrowUp' || (e.key === 'Tab' && e.shiftKey)) {
+                    e.preventDefault();
+                    const prev = focusable[currentIndex - 1] || focusable[focusable.length - 1];
+                    prev.focus();
+                }
+
+                if ((e.key === 'Enter' || e.key === ' ') && focused) {
+                    $(focused).trigger('click');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
